@@ -1,7 +1,4 @@
-# Minor change to mage a commit
-
-# Created by https://www.toptal.com/developers/gitignore/api/vs,csharp
-# Edit at https://www.toptal.com/developers/gitignore?templates=vs,csharp
+*.feature.cs
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and

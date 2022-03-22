@@ -11,7 +11,7 @@
 		Scenario: Add books to store
 	
 			Testing the addition of a book to the store
-			Related C# class: IntroWithoutParams.cs
+			Related C# class: AddBookWithoutParamsSteps.cs
 
 			Given I have one book in store
 			And I have one magazine in store
@@ -22,7 +22,7 @@
 		Scenario: Add books to store using steps with parameters
 	
 			Testing the addition of a book to the store using parameters
-			Related C# class: IntroWithParams.cs
+			Related C# class: AddBookWithParamsSteps.cs
 
 			Given I have 2 books in store
 			And I have 1 magazine in store

@@ -26,13 +26,13 @@
             store.AddBooks(booksCount);
         }
 
-        [Then("There should be (.*) books in store")]
+        [Then("there should be (.*) books in store")]
         public void CheckNumberOfBooks(int booksCount)
         {
             Assert.True(store.Books.Count == booksCount);
         }
 
-        [Then("There should be (.*) magazines")]
+        [Then("there should be (.*) magazines")]
         public void CheckNumberOfMagazines(int magazinesCount)
         {
             Assert.True(store.Magazines.Count == magazinesCount);

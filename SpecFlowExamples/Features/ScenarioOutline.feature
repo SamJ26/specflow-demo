@@ -17,8 +17,8 @@
 			| Name     | <name>   |
 			| Author   | <author> |
 			| Price    | <price>  |
-		Then There should be 1 book with name <name>
-		And There should be 1 magazine
+		Then there should be 1 book with name <name>
+		And there should be 1 magazine
 
 		Examples:
 			| name                 | author          | price |

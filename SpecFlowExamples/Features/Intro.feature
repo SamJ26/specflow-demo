@@ -15,5 +15,5 @@
 			Given I have one book in store
 			And I have one magazine in store
 			When I add two more books to store
-			Then There should be three books in store
-			And There should be one magazine
+			Then there should be three books in store
+			And there should be one magazine

@@ -21,8 +21,8 @@
 			Related C# class: AddBookSteps.cs
 
 			When I add 2 more book to store
-			Then There should be 3 books in store
-			And There should be 1 magazine
+			Then there should be 3 books in store
+			And there should be 1 magazine
 
 		Scenario: Remove books from store
 
@@ -30,5 +30,5 @@
 			Related C# class: RemoveBookSteps.cs
 
 			When I remove one book from store
-			Then There should be 0 books in store
-			And There should be 1 magazine
+			Then there should be 0 books in store
+			And there should be 1 magazine

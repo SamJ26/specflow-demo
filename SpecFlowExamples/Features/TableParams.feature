@@ -17,5 +17,5 @@
 			| C# 10 in nutshell    | Josepf Albahari | 70.99 |
 			| Pragmatic programmer | Andrew Hunt     | 50.99 |
 
-		Then There should be 5 books in store
-		And There should be 1 magazine
+		Then there should be 5 books in store
+		And there should be 1 magazine

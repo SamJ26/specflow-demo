@@ -30,14 +30,14 @@ namespace SpecFlowExamples.StepDefinitions
             store.AddBook(bookObject);
         }
 
-        [Then("There should be 1 book with name (.*)")]
+        [Then("there should be 1 book with name (.*)")]
         public void CheckForSpecifiedBook(string bookName)
         {
             var books = store.Books.FindAll(book => book.Name == bookName);
             Assert.True(books.Count == 1);
         }
 
-        [Then("There should be (.*) magazine")]
+        [Then("there should be (.*) magazine")]
         public void CheckNumberOfMagazines(int magazinesCount)
         {
             Assert.True(store.Magazines.Count == magazinesCount);

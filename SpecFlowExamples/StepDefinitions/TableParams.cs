@@ -30,13 +30,13 @@ namespace SpecFlowExamples.StepDefinitions
             store.AddBooks(books);
         }
 
-        [Then("There should be (.*) books in store")]
+        [Then("there should be (.*) books in store")]
         public void CheckNumberOfBooks(int booksCount)
         {
             Assert.True(store.Books.Count == booksCount);
         }
 
-        [Then("There should be (.*) magazine")]
+        [Then("there should be (.*) magazine")]
         public void CheckNumberOfMagazines(int magazinesCount)
         {
             Assert.True(store.Magazines.Count == magazinesCount);

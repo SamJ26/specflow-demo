@@ -18,41 +18,39 @@ namespace SpecFlowExamples.Hooks
             this.outputHelper = outputHelper;
         }
 
-        // This method must be statis!!
+        // This method must be static!!
         [BeforeTestRun]
         public static void BeforeTestRunLogic() { /* Code */ }
 
         // This method must be static!!
         [BeforeFeature]
-        public static void BeforeFeatureLogic(FeatureContext featureContext)
-        {
-            var info = featureContext.FeatureInfo;
-        }
+        public static void BeforeFeatureLogic() { /* Code */ }
 
         [BeforeScenario]
         public void BeforeScenarioLogic(ScenarioContext scenarioContext)
         {
             var info = scenarioContext.ScenarioInfo;
+            outputHelper.WriteLine(
+                $"MY OUTPUT: Title of executed SCENARIO is '{info.Title}'");
         }
 
         [BeforeStep]
-        public void BeforeStepLogic() { /* Code */ }
+        public void BeforeStepLogic(ScenarioContext scenarioContext)
+        {
+            var info = scenarioContext.StepContext.StepInfo;
+            outputHelper.WriteLine(
+                $"MY OUTPUT: Title of executed STEP is '{info.Text}'");
+        }
 
         [AfterStep]
         public void AfterStepLogic() { /* Code */ }
 
         [AfterScenario]
-        public void AfterScenarioLogic(ScenarioContext scenarioContext)
-        {
-            var into = scenarioContext.ScenarioInfo;
-        }
+        public void AfterScenarioLogic(ScenarioContext scenarioContext) { /* Code */ }
 
         // This method must be static!!
         [AfterFeature]
-        public static void AfterFeatureLogic(FeatureContext featureContext)
-        {
-            var info = featureContext.FeatureInfo;
-        }
+        public static void AfterFeatureLogic(FeatureContext featureContext) { /* Code */ }
 
         // This method must be static!!
         [AfterTestRun]

@@ -7,6 +7,8 @@ namespace SpecFlowExamples
         public List<Book> Books { get; set; } = new();
         public List<Magazine> Magazines { get; set; } = new();
 
+        public void AddBook(Book book) => Books.Add(book);
+
         public void AddBooks(int count)
         {
             for (int i = 0; i < count; i++)

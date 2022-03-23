@@ -9,6 +9,8 @@ namespace SpecFlowExamples
 
         public void AddBook(Book book) => Books.Add(book);
 
+        public void AddBooks(IEnumerable<Book> books) => Books.AddRange(books);
+
         public void AddBooks(int count)
         {
             for (int i = 0; i < count; i++)

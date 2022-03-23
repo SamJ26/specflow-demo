@@ -17,5 +17,6 @@
 				| Property | Value             |
 				| Name     | Amazing book name |
 				| Author   | E.L. James        |
+				| Price    | 15.99             |
 			Then There should be 3 books in store
 			And There should be 1 magazine

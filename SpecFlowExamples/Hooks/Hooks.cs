@@ -1,5 +1,5 @@
 ﻿// Uncomment this line to use hooks
-// #define USE_HOOKS
+#define USE_HOOKS
 
 #if USE_HOOKS
 
@@ -29,19 +29,21 @@ namespace SpecFlowExamples.Hooks
         [BeforeScenario]
         public void BeforeScenarioLogic(ScenarioContext scenarioContext)
         {
+            // You can add anything into ScenarioContext
             scenarioContext["number"] = 1;
+
             var info = scenarioContext.ScenarioInfo;
-            outputHelper.WriteLine(
-                $"MY OUTPUT: Title of executed SCENARIO is '{info.Title}'");
+            outputHelper.WriteLine($"MY OUTPUT: Title of executed SCENARIO is '{info.Title}'");
         }
 
         [BeforeStep]
         public void BeforeStepLogic(ScenarioContext scenarioContext)
         {
+            // Example of how to obtain data from ScenarioContext
             int number = (int)scenarioContext["number"];
+
             var info = scenarioContext.StepContext.StepInfo;
-            outputHelper.WriteLine(
-                $"MY OUTPUT: Title of executed STEP is '{info.Text}'");
+            outputHelper.WriteLine($"MY OUTPUT: Title of executed STEP is '{info.Text}'");
         }
 
         [AfterStep]

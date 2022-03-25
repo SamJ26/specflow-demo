@@ -2,7 +2,7 @@
 {
     [Binding]
     [Scope(Feature = "Intro", Scenario = "Add books to store")]
-    public class AddBookWithoutParamsSteps
+    public class IntroSteps
     {
         private readonly Store store = new Store();
 

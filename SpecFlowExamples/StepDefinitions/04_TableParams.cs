@@ -5,7 +5,7 @@ namespace SpecFlowExamples.StepDefinitions
 {
     [Binding]
     [Scope(Feature = "TableParams")]
-    internal class TableParams
+    public class TableParamsSteps
     {
         private readonly Store store = new Store();
 
